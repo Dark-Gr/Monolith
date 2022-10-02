@@ -1,6 +1,7 @@
 package io.github.darkgr.monolith;
 
 import com.mojang.logging.LogUtils;
+import io.github.darkgr.monolith.registries.Registries;
 import net.minecraftforge.fml.common.Mod;
 import org.slf4j.Logger;
 
@@ -10,6 +11,6 @@ public class Monolith {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public Monolith() {
-
+        Registries.register();
     }
 }
